@@ -2744,6 +2744,28 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
+                  "uri": "src/multiple_constants/C1.sol"
+                },
+                "region": {
+                  "charLength": 23,
+                  "charOffset": 0
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/multiple_constants/C2.sol"
+                },
+                "region": {
+                  "charLength": 23,
+                  "charOffset": 0
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
                   "uri": "src/nested/1/Nested.sol"
                 },
                 "region": {
@@ -3696,6 +3718,37 @@
             "text": "Division operations followed directly by multiplication operations can lead to precision loss due to the way integer arithmetic is handled in Solidity."
           },
           "ruleId": "division-before-multiplication"
+        },
+        {
+          "level": "note",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/multiple_constants/C1.sol"
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/multiple_constants/C2.sol"
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 67
+                }
+              }
+            }
+          ],
+          "message": {
+            "text": "Constants defined multiple times is not ideal. Consider renaming or re-use the same constant"
+          },
+          "ruleId": "constant-defined-multiple-times"
         }
       ],
       "tool": {
